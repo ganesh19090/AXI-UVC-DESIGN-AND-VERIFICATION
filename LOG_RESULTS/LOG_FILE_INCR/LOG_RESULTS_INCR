@@ -1,0 +1,340 @@
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 12:47:25 on Feb 21,2026
+# vlog -reportprogress 300 list.svh "+incdir+C:/Users/91935/Desktop/uvm-1.2/src" 
+# -- Compiling package uvm_pkg
+# -- Compiling package list_svh_unit
+# -- Importing package uvm_pkg
+# -- Compiling module axi_mem_slave
+# -- Compiling module sync_fifo
+# -- Compiling interface axi_if
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 12:47:26 on Feb 21,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 12:47:27 on Feb 21,2026, Elapsed time: 0:30:30
+# Errors: 0, Warnings: 3
+# vsim -novopt -suppress 12110 top -sv_lib C:/questasim64_10.7c/uvm-1.2/win64/uvm_dpi "+UVM_TESTNAME=axi_base_test_incr" 
+# Start time: 12:47:27 on Feb 21,2026
+# Loading C:/Users/91935/AppData/Local/Temp\Ganesh@LAPTOP-H59KRDDF_dpi_21380\win64_gcc-10.3.0\export_tramp.dll
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing D:/gvim new/AXI PROTOCOL/verif/work.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing D:/gvim new/AXI PROTOCOL/verif/work.list_svh_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing D:/gvim new/AXI PROTOCOL/verif/work.uvm_pkg
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.list_svh_unit
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.top
+# Refreshing D:/gvim new/AXI PROTOCOL/verif/work.axi_if
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading work.axi_if
+# Refreshing D:/gvim new/AXI PROTOCOL/verif/work.axi_mem_slave
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading work.axi_mem_slave
+# Refreshing D:/gvim new/AXI PROTOCOL/verif/work.sync_fifo
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading work.sync_fifo
+# ** Warning: (vsim-3839) Variable '/top/uut_axi_mem_slave/rdata', driven via a port connection, is multiply driven. See axi_mem_slave.v(102).
+#    Time: 0 ns  Iteration: 0  Instance: /top/uut_axi_mem_slave File: axi_mem_slave.v Line: 217
+# ** Warning: (vsim-8441) Clocking block output axi_vif.axi_drv_cb.bready is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /list_svh_unit::axi_drv File: axi_drv.sv Line: 103
+# Compiling C:/Users/91935/AppData/Local/Temp\Ganesh@LAPTOP-H59KRDDF_dpi_21380\win64_gcc-10.3.0\exportwrapper.c
+# Loading C:/Users/91935/AppData/Local/Temp\Ganesh@LAPTOP-H59KRDDF_dpi_21380\win64_gcc-10.3.0\vsim_auto_compile.dll
+# Loading C:/questasim64_10.7c/uvm-1.2/win64/uvm_dpi.dll
+# UVM_INFO C:/Users/91935/Desktop/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test axi_base_test_incr...
+# UVM_INFO axi_base_test.sv(67) @ 0: uvm_test_top [axi_base_test_incr] build_phase is verifed
+# UVM_INFO axi_env.sv(15) @ 0: uvm_test_top.axi_env_h [axi_env] build_phase verified
+# UVM_INFO axi_agent.sv(23) @ 0: uvm_test_top.axi_env_h.axi_agent_h [axi_agent] build_phase is verified
+# UVM_INFO axi_sbd.sv(24) @ 0: uvm_test_top.axi_env_h.axi_sbd_h [axi_sbd] build_phase is verified
+# UVM_INFO axi_agent.sv(30) @ 0: uvm_test_top.axi_env_h.axi_agent_h [axi_agent] connect_phase is verified
+# UVM_INFO axi_env.sv(23) @ 0: uvm_test_top.axi_env_h [axi_env] connect_phase is verified
+# UVM_INFO axi_base_test.sv(73) @ 0: uvm_test_top [axi_base_test_incr] connect_phase is verified
+# UVM_INFO C:/Users/91935/Desktop/uvm-1.2/src/base/uvm_root.svh(579) @ 0: reporter [UVMTOP] UVM testbench topology:
+# ------------------------------------------------------------------
+# Name                       Type                        Size  Value
+# ------------------------------------------------------------------
+# uvm_test_top               axi_base_test_incr          -     @335 
+#   axi_env_h                axi_env                     -     @352 
+#     axi_agent_h            axi_agent                   -     @365 
+#       axi_cov_h            axi_cov                     -     @559 
+#         analysis_imp       uvm_analysis_imp            -     @568 
+#       axi_drv_h            axi_drv                     -     @384 
+#         rsp_port           uvm_analysis_port           -     @403 
+#         seq_item_port      uvm_seq_item_pull_port      -     @393 
+#       axi_mon_h            axi_mon                     -     @550 
+#         axi_ap_h           uvm_analysis_port           -     @589 
+#       axi_sqr_h            uvm_sequencer               -     @413 
+#         rsp_export         uvm_analysis_export         -     @422 
+#         seq_item_export    uvm_seq_item_pull_imp       -     @540 
+#         arbitration_queue  array                       0     -    
+#         lock_queue         array                       0     -    
+#         num_last_reqs      integral                    32    'd1  
+#         num_last_rsps      integral                    32    'd1  
+#     axi_sbd_h              axi_sbd                     -     @374 
+#       fifo                 uvm_tlm_analysis_fifo #(T)  -     @607 
+#         analysis_export    uvm_analysis_imp            -     @656 
+#         get_ap             uvm_analysis_port           -     @646 
+#         get_peek_export    uvm_get_peek_imp            -     @626 
+#         put_ap             uvm_analysis_port           -     @636 
+#         put_export         uvm_put_imp                 -     @616 
+# ------------------------------------------------------------------
+# 
+# UVM_INFO axi_base_test.sv(79) @ 0: uvm_test_top [axi_base_test_incr] start_of_simulation phase is verified
+# UVM_INFO axi_base_test.sv(86) @ 0: uvm_test_top [axi_base_test_incr] run_phase is verified
+# UVM_INFO axi_sbd.sv(31) @ 0: uvm_test_top.axi_env_h.axi_sbd_h [AXI_SBD] SBD START
+# UVM_INFO axi_mon.sv(27) @ 0: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [axi_mon] run_phase is verified
+# UVM_INFO axi_drv.sv(21) @ 0: uvm_test_top.axi_env_h.axi_agent_h.axi_drv_h [axi_drv] run_phase is verified
+# UVM_INFO axi_seq_lib.sv(47) @ 0: uvm_test_top.axi_env_h.axi_agent_h.axi_sqr_h@@axi_incr_seq [axi_incr_seq] pre_body is executed
+# ------------------------------------------------------------------------------------------------------------
+# Name                           Type          Size  Value                                                    
+# ------------------------------------------------------------------------------------------------------------
+# req                            axi_tx        -     @706                                                     
+#   id                           integral      4     'hf                                                      
+#   addr                         integral      32    'h22f                                                    
+#   len                          integral      4     'h3                                                      
+#   size                         integral      3     'h2                                                      
+#   burst                        burst_t       2     INCR                                                     
+#   wdata                        da(integral)  4     -                                                        
+#     [0]                        integral      32    'h7e843002                                               
+#     [1]                        integral      32    'h78f7f5f9                                               
+#     [2]                        integral      32    'h5761d161                                               
+#     [3]                        integral      32    'h2e064401                                               
+#   rdata                        da(integral)  0     -                                                        
+#   strb                         integral      4     'hf                                                      
+#   resp                         resp_t        2     OKAY                                                     
+#   last                         da(integral)  0     -                                                        
+#   begin_time                   time          64    0                                                        
+#   depth                        int           32    'd2                                                      
+#   parent sequence (name)       string        12    axi_incr_seq                                             
+#   parent sequence (full name)  string        57    uvm_test_top.axi_env_h.axi_agent_h.axi_sqr_h.axi_incr_seq
+#   sequencer                    string        44    uvm_test_top.axi_env_h.axi_agent_h.axi_sqr_h             
+# ------------------------------------------------------------------------------------------------------------
+# UVM_INFO axi_drv.sv(53) @ 0: uvm_test_top.axi_env_h.axi_agent_h.axi_drv_h [AW] write_address_channel START
+# UVM_INFO axi_tx.sv(51) @ 5: uvm_test_top.axi_env_h.axi_agent_h.axi_sqr_h@@axi_incr_seq.req [AXI_AW] >>>AXI WR ADDRESS CHANNEL @ 5 <<< 
+#  AWID=f 
+#  AWADDR=0000022f 
+#  AWLEN=3 
+#  AWSIZE=2 
+#  AWBURST=INCR
+# UVM_INFO axi_mon.sv(47) @ 15: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_AW] write_address_channel START
+# UVM_INFO axi_mon.sv(58) @ 15: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_AW] write_address_channel END
+# UVM_INFO axi_drv.sv(70) @ 25: uvm_test_top.axi_env_h.axi_agent_h.axi_drv_h [AW] write_address_channel END
+# UVM_INFO axi_drv.sv(75) @ 25: uvm_test_top.axi_env_h.axi_agent_h.axi_drv_h [W] write_data_channel START
+# UVM_INFO axi_tx.sv(56) @ 25: uvm_test_top.axi_env_h.axi_agent_h.axi_sqr_h@@axi_incr_seq.req [AXI_W] >>>AXI WR DATA CHANNEL @ 25 <<< 
+#  WID=f 
+#  WSTRB=f 
+#  WDATA='{2122592258, 2029516281, 1466028385, 772162561} 
+#  WLAST=0
+# UVM_INFO axi_mon.sv(47) @ 25: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_AW] write_address_channel START
+# UVM_INFO axi_mon.sv(58) @ 25: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_AW] write_address_channel END
+# Burst type is INCR
+# UVM_INFO axi_tx.sv(56) @ 35: uvm_test_top.axi_env_h.axi_agent_h.axi_sqr_h@@axi_incr_seq.req [AXI_W] >>>AXI WR DATA CHANNEL @ 35 <<< 
+#  WID=f 
+#  WSTRB=f 
+#  WDATA='{2122592258, 2029516281, 1466028385, 772162561} 
+#  WLAST=0
+# UVM_INFO axi_mon.sv(64) @ 35: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_W] write_data_channel START
+# UVM_INFO axi_mon.sv(71) @ 35: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_W] write_channel ID EXIST
+# UVM_INFO axi_mon.sv(89) @ 35: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_W] write_data_channel END
+# Burst type is INCR
+# UVM_INFO axi_tx.sv(56) @ 45: uvm_test_top.axi_env_h.axi_agent_h.axi_sqr_h@@axi_incr_seq.req [AXI_W] >>>AXI WR DATA CHANNEL @ 45 <<< 
+#  WID=f 
+#  WSTRB=f 
+#  WDATA='{2122592258, 2029516281, 1466028385, 772162561} 
+#  WLAST=0
+# UVM_INFO axi_mon.sv(64) @ 45: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_W] write_data_channel START
+# UVM_INFO axi_mon.sv(71) @ 45: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_W] write_channel ID EXIST
+# UVM_INFO axi_mon.sv(89) @ 45: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_W] write_data_channel END
+# Burst type is INCR
+# UVM_INFO axi_tx.sv(56) @ 55: uvm_test_top.axi_env_h.axi_agent_h.axi_sqr_h@@axi_incr_seq.req [AXI_W] >>>AXI WR DATA CHANNEL @ 55 <<< 
+#  WID=f 
+#  WSTRB=f 
+#  WDATA='{2122592258, 2029516281, 1466028385, 772162561} 
+#  WLAST=0
+# UVM_INFO axi_mon.sv(64) @ 55: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_W] write_data_channel START
+# UVM_INFO axi_mon.sv(71) @ 55: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_W] write_channel ID EXIST
+# UVM_INFO axi_mon.sv(89) @ 55: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_W] write_data_channel END
+# Burst type is INCR
+# UVM_INFO axi_drv.sv(96) @ 65: uvm_test_top.axi_env_h.axi_agent_h.axi_drv_h [W] write_data_channel END
+# UVM_INFO axi_drv.sv(104) @ 65: uvm_test_top.axi_env_h.axi_agent_h.axi_drv_h [B] write_response_channel START
+# UVM_INFO axi_mon.sv(64) @ 65: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_W] write_data_channel START
+# UVM_INFO axi_mon.sv(71) @ 65: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_W] write_channel ID EXIST
+# UVM_INFO axi_mon.sv(82) @ 65: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_W] FOR WID = 15 DATA ='{2122592258, 2029516281, 1466028385, 772162561} WLAST =1 
+# UVM_INFO axi_mon.sv(89) @ 65: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_W] write_data_channel END
+# UVM_INFO axi_drv.sv(109) @ 75: uvm_test_top.axi_env_h.axi_agent_h.axi_drv_h [B] Waiting for BVALID...
+# UVM_INFO axi_tx.sv(61) @ 75: uvm_test_top.axi_env_h.axi_agent_h.axi_sqr_h@@axi_incr_seq.req [AXI_B] >>> AXI WR RESPONSE CHANNEL @ 75 <<< 
+#  BID=f 
+#  BRESP=3
+# UVM_INFO axi_mon.sv(94) @ 75: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_B] write_response_channel START
+# UVM_INFO axi_mon.sv(99) @ 75: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_B] WRITE CHHANNEL ID EXISTS
+# UVM_INFO axi_mon.sv(101) @ 75: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_WROTE_TX] MON going to WRITE TO SBD & COV
+# UVM_INFO axi_mon.sv(102) @ 75: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_WROTE_TX] wr_tx[15]='{m_leaf_name:"wr_tx[15]", m_inst_id:755, use_uvm_seeding:1, m_inst_count:807, __m_uvm_status_container:@uvm_status_container@1, uvm_global_copy_map:'{ }, events:@uvm_object_string_pool__2@37, begin_event:@uvm_event__1@12, end_event:@uvm_event__1@13, m_transaction_id:-1, begin_time:18446744073709551615, end_time:18446744073709551615, accept_time:18446744073709551615, initiator:null, stream_handle:null, tr_recorder:null, m_sequence_id:-1, m_use_sequence_info:0, m_depth:-1, m_sequencer:null, m_parent_sequence:null, print_sequence_info:0, issued1:0, issued2:0, id:15, addr:559, len:3, size:2, burst:INCR, wdata:'{2122592258, 2029516281, 1466028385, 772162561}, rdata:'{}, strb:15, resp:DECERR, last:'{}, wlast:1, rlast:0, wr_rd:1, type_name:"axi_tx"}
+# UVM_INFO axi_cov.sv(62) @ 75: uvm_test_top.axi_env_h.axi_agent_h.axi_cov_h [axi_cov] WRITE OF COV CALLED
+# UVM_INFO axi_mon.sv(106) @ 75: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_WROTE_TX] MON_WROTE TX TO SBD & COV
+# UVM_INFO axi_mon.sv(111) @ 75: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_B] write_response_channel END
+# UVM_INFO axi_sbd.sv(34) @ 75: uvm_test_top.axi_env_h.axi_sbd_h [AXI SBD] received tx from mon
+# UVM_INFO axi_drv.sv(120) @ 85: uvm_test_top.axi_env_h.axi_agent_h.axi_drv_h [B] write_response_Channel END
+# ------------------------------------------------------------------------------------------------------------
+# Name                           Type          Size  Value                                                    
+# ------------------------------------------------------------------------------------------------------------
+# req                            axi_tx        -     @820                                                     
+#   id                           integral      4     'he                                                      
+#   addr                         integral      32    'h22f                                                    
+#   len                          integral      4     'h3                                                      
+#   size                         integral      3     'h2                                                      
+#   burst                        burst_t       2     INCR                                                     
+#   wdata                        da(integral)  4     -                                                        
+#     [0]                        integral      32    'hbdf3b2a9                                               
+#     [1]                        integral      32    'hd45be8fb                                               
+#     [2]                        integral      32    'hecf9db4f                                               
+#     [3]                        integral      32    'hb35c4f7e                                               
+#   rdata                        da(integral)  0     -                                                        
+#   strb                         integral      4     'hf                                                      
+#   resp                         resp_t        2     OKAY                                                     
+#   last                         da(integral)  0     -                                                        
+#   begin_time                   time          64    85                                                       
+#   depth                        int           32    'd2                                                      
+#   parent sequence (name)       string        12    axi_incr_seq                                             
+#   parent sequence (full name)  string        57    uvm_test_top.axi_env_h.axi_agent_h.axi_sqr_h.axi_incr_seq
+#   sequencer                    string        44    uvm_test_top.axi_env_h.axi_agent_h.axi_sqr_h             
+# ------------------------------------------------------------------------------------------------------------
+# UVM_INFO axi_drv.sv(124) @ 85: uvm_test_top.axi_env_h.axi_agent_h.axi_drv_h [AR] read_address_channel START
+# UVM_INFO axi_tx.sv(66) @ 95: uvm_test_top.axi_env_h.axi_agent_h.axi_sqr_h@@axi_incr_seq.req [AXI_AR] >>>AXI AR ADDRESS CHANNEL @ 95 <<< 
+#  ARID=e 
+#  ARADDR=0000022f 
+#  ARLEN=3 
+#  ARSIZE=2 
+#  ARBURST=INCR
+# UVM_INFO axi_mon.sv(128) @ 105: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_AR] read_channel AR START
+# UVM_INFO axi_mon.sv(138) @ 105: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_AR] read_Channel AR END
+# UVM_INFO axi_drv.sv(141) @ 115: uvm_test_top.axi_env_h.axi_agent_h.axi_drv_h [AR] read_address_channel END
+# UVM_INFO axi_drv.sv(145) @ 115: uvm_test_top.axi_env_h.axi_agent_h.axi_drv_h [R] read_data_channel start
+# UVM_INFO axi_mon.sv(128) @ 115: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_AR] read_channel AR START
+# UVM_INFO axi_mon.sv(138) @ 115: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_AR] read_Channel AR END
+# Burst type is INCR
+# UVM_INFO axi_tx.sv(71) @ 135: uvm_test_top.axi_env_h.axi_agent_h.axi_sqr_h@@axi_incr_seq.req [AXI_R] >>> AXI R DATA CHANNEL @ 135 <<< 
+#  RID=e 
+#  RRESP=0 
+#  RDATA='{2122592258, 0, 0, 0} 
+#  RLAST=1
+# UVM_INFO axi_mon.sv(143) @ 135: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_R] read_channel R START
+# UVM_INFO axi_mon.sv(147) @ 135: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_R] read_CHannel ID EXISTS
+# UVM_INFO axi_mon.sv(166) @ 135: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_R] read_channel R END
+# Burst type is INCR
+# UVM_INFO axi_tx.sv(71) @ 145: uvm_test_top.axi_env_h.axi_agent_h.axi_sqr_h@@axi_incr_seq.req [AXI_R] >>> AXI R DATA CHANNEL @ 145 <<< 
+#  RID=e 
+#  RRESP=0 
+#  RDATA='{2122592258, 2029516281, 0, 0} 
+#  RLAST=1
+# UVM_INFO axi_mon.sv(143) @ 145: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_R] read_channel R START
+# UVM_INFO axi_mon.sv(147) @ 145: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_R] read_CHannel ID EXISTS
+# UVM_INFO axi_mon.sv(166) @ 145: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_R] read_channel R END
+# Burst type is INCR
+# UVM_INFO axi_tx.sv(71) @ 155: uvm_test_top.axi_env_h.axi_agent_h.axi_sqr_h@@axi_incr_seq.req [AXI_R] >>> AXI R DATA CHANNEL @ 155 <<< 
+#  RID=e 
+#  RRESP=0 
+#  RDATA='{2122592258, 2029516281, 1466028385, 0} 
+#  RLAST=1
+# UVM_INFO axi_mon.sv(143) @ 155: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_R] read_channel R START
+# UVM_INFO axi_mon.sv(147) @ 155: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_R] read_CHannel ID EXISTS
+# UVM_INFO axi_mon.sv(166) @ 155: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_R] read_channel R END
+# Burst type is INCR
+# UVM_INFO axi_tx.sv(71) @ 165: uvm_test_top.axi_env_h.axi_agent_h.axi_sqr_h@@axi_incr_seq.req [AXI_R] >>> AXI R DATA CHANNEL @ 165 <<< 
+#  RID=e 
+#  RRESP=0 
+#  RDATA='{2122592258, 2029516281, 1466028385, 772162561} 
+#  RLAST=1
+# UVM_INFO axi_mon.sv(143) @ 165: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_R] read_channel R START
+# UVM_INFO axi_mon.sv(147) @ 165: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_R] read_CHannel ID EXISTS
+# UVM_INFO axi_mon.sv(156) @ 165: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_R] FOR RID = 14 DATA = '{2122592258, 2029516281, 1466028385, 772162561} RLAST =1
+# UVM_INFO axi_mon.sv(159) @ 165: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_WROTE_TX] MON going to write TO SBD AND COV
+# UVM_INFO axi_cov.sv(62) @ 165: uvm_test_top.axi_env_h.axi_agent_h.axi_cov_h [axi_cov] WRITE OF COV CALLED
+# UVM_INFO axi_mon.sv(161) @ 165: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_WROTE_TX] rd_tx[14] = '{m_leaf_name:"rd_tx[14]", m_inst_id:842, use_uvm_seeding:1, m_inst_count:884, __m_uvm_status_container:@uvm_status_container@1, uvm_global_copy_map:'{ }, events:@uvm_object_string_pool__2@40, begin_event:@uvm_event__1@19, end_event:@uvm_event__1@20, m_transaction_id:-1, begin_time:18446744073709551615, end_time:18446744073709551615, accept_time:18446744073709551615, initiator:null, stream_handle:null, tr_recorder:null, m_sequence_id:-1, m_use_sequence_info:0, m_depth:-1, m_sequencer:null, m_parent_sequence:null, print_sequence_info:0, issued1:0, issued2:0, id:14, addr:559, len:3, size:2, burst:INCR, wdata:'{}, rdata:'{2122592258, 2029516281, 1466028385, 772162561}, strb:0, resp:OKAY, last:'{}, wlast:0, rlast:1, wr_rd:0, type_name:"axi_tx"}
+# UVM_INFO axi_mon.sv(166) @ 165: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_R] read_channel R END
+# UVM_INFO axi_sbd.sv(34) @ 165: uvm_test_top.axi_env_h.axi_sbd_h [AXI SBD] received tx from mon
+# UVM_INFO axi_drv.sv(170) @ 175: uvm_test_top.axi_env_h.axi_agent_h.axi_drv_h [R] read_data_channel end
+# UVM_INFO axi_mon.sv(143) @ 175: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_R] read_channel R START
+# UVM_INFO axi_mon.sv(147) @ 175: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_R] read_CHannel ID EXISTS
+# UVM_INFO axi_mon.sv(166) @ 175: uvm_test_top.axi_env_h.axi_agent_h.axi_mon_h [AXI_MON_R] read_channel R END
+# UVM_INFO C:/Users/91935/Desktop/uvm-1.2/src/base/uvm_objection.svh(1270) @ 1175: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO axi_sbd.sv(138) @ 1175: uvm_test_top.axi_env_h.axi_sbd_h [AXI_SBD_TEST_STATUS] miss_match_count=00000000 match_count=00000004 
+# UVM_INFO axi_sbd.sv(142) @ 1175: uvm_test_top.axi_env_h.axi_sbd_h [AXI_SBD_TEST_STATUS] 
+# ===========
+#  TEST axi_base_test_incr PASSED  
+# ============
+# UVM_INFO C:/Users/91935/Desktop/uvm-1.2/src/base/uvm_report_server.svh(847) @ 1175: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   90
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [AR]     2
+# [AW]     2
+# [AXI SBD]     2
+# [AXI_AR]     1
+# [AXI_AW]     1
+# [AXI_B]     1
+# [AXI_MON_AR]     4
+# [AXI_MON_AW]     4
+# [AXI_MON_B]     3
+# [AXI_MON_R]    16
+# [AXI_MON_W]    13
+# [AXI_MON_WROTE_TX]     5
+# [AXI_R]     4
+# [AXI_SBD]     1
+# [AXI_SBD_TEST_STATUS]     2
+# [AXI_W]     4
+# [B]     3
+# [R]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [UVMTOP]     1
+# [W]     2
+# [axi_agent]     2
+# [axi_base_test_incr]     4
+# [axi_cov]     2
+# [axi_drv]     1
+# [axi_env]     2
+# [axi_incr_seq]     1
+# [axi_mon]     1
+# [axi_sbd]     1
+# 
+# ** Note: $finish    : C:/Users/91935/Desktop/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 1175 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/Users/91935/Desktop/uvm-1.2/src/base/uvm_root.svh line 517
